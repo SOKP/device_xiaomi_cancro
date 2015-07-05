@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/chargeonlymode:root/sbin/chargeonlymode
 
-# Quick charging
+# Quick Charge 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.usb.hvdcp.detect=true
 
@@ -357,10 +357,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.amr.wideband=1
 
-# ir_proximity prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qti.sensors.ir_proximity=true
-	
+# Some binaries not reedited from commom.mk
+PRODUCT_PACKAGES += \
+    zip \
+    unrar
+
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -391,8 +392,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.print.xml:system/etc/permissions/android.software.print.xml
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0
+ro.secure=0 \
+ro.adb.secure=0
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
