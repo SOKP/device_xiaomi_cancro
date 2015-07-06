@@ -263,6 +263,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     CancroDoze
 
+# Optional CM packages
+PRODUCT_PACKAGES += \
+    LiveWallpapersPicker \
+    SoundRecorder
+	
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
