@@ -391,5 +391,9 @@
 
     <!-- Is the device LTE capable -->
     <bool name="config_lte_capable">false</bool>
+    
+    <!-- Performance profiles -->
+    <string name="config_perf_profile_prop">powerhal</string>
+    <string name="config_perf_profile_default_entry">1</string>
 
 </resources>
