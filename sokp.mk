@@ -26,7 +26,7 @@ $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 $(call inherit-product, vendor/sokp/config/nfc_enhanced.mk)
 
 # Inherit some common SOKP stuff.
-$(call inherit-product, vendor/sokp/config/common_mini_phone.mk)
+$(call inherit-product, vendor/sokp/config/common_full_phone.mk)
 
 PRODUCT_NAME := sokp_cancro
 PRODUCT_DEVICE := cancro
