@@ -17,6 +17,6 @@
   {
     "repository": "kernel_xiaomi_cancro",
     "target_path": "kernel/xiaomi/cancro",
-	  "branch": "sokp-l5.1"
+    "branch": "sokp-l5.1"
   }
 ]
